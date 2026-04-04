@@ -614,16 +614,16 @@ export default function App() {
 
       {/* Blueprint Section */}
       <section id="blueprint" className="max-w-[1280px] mx-auto px-6 md:px-10 lg:px-20 py-[clamp(80px,12vw,160px)] relative z-10">
-        <div className="flex gap-4 mb-12 overflow-x-auto pb-2">
+        <div className="flex flex-wrap gap-4 mb-12">
           <button 
             onClick={() => setActiveBlueprint('orion')}
-            className={`font-mono text-xs uppercase tracking-widest py-3 px-6 border transition-colors whitespace-nowrap ${activeBlueprint === 'orion' ? 'border-atmosphere text-atmosphere bg-atmosphere/10' : 'border-border text-text-muted hover:text-text-secondary hover:border-text-secondary'}`}
+            className={`font-mono text-xs uppercase tracking-widest py-3 px-6 border transition-colors whitespace-nowrap flex-1 sm:flex-none ${activeBlueprint === 'orion' ? 'border-atmosphere text-atmosphere bg-atmosphere/10' : 'border-border text-text-muted hover:text-text-secondary hover:border-text-secondary'}`}
           >
             Orion Spacecraft
           </button>
           <button 
             onClick={() => setActiveBlueprint('sls')}
-            className={`font-mono text-xs uppercase tracking-widest py-3 px-6 border transition-colors whitespace-nowrap ${activeBlueprint === 'sls' ? 'border-atmosphere text-atmosphere bg-atmosphere/10' : 'border-border text-text-muted hover:text-text-secondary hover:border-text-secondary'}`}
+            className={`font-mono text-xs uppercase tracking-widest py-3 px-6 border transition-colors whitespace-nowrap flex-1 sm:flex-none ${activeBlueprint === 'sls' ? 'border-atmosphere text-atmosphere bg-atmosphere/10' : 'border-border text-text-muted hover:text-text-secondary hover:border-text-secondary'}`}
           >
             SLS Block 1B
           </button>
