@@ -5,14 +5,14 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsive
 
 const comparisonData = [
   {
-    metric: 'Thrust (M lbs)',
-    Apollo: 7.5,
-    Artemis: 8.8,
+    metric: 'Thrust (M kg)',
+    Apollo: 3.4,
+    Artemis: 3.99,
   },
   {
-    metric: 'Volume (100 cu ft)',
-    Apollo: 2.1,
-    Artemis: 3.3,
+    metric: 'Volume (cu m)',
+    Apollo: 5.9,
+    Artemis: 9.3,
   },
   {
     metric: 'Mission Days',
@@ -22,7 +22,7 @@ const comparisonData = [
 ];
 
 export default function App() {
-  const [velocity, setVelocity] = useState(24500);
+  const [velocity, setVelocity] = useState(39400);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeBlueprint, setActiveBlueprint] = useState<'orion' | 'sls'>('orion');
   const [activeSection, setActiveSection] = useState('');
@@ -60,8 +60,8 @@ export default function App() {
   useEffect(() => {
     if (missionStatus !== 'active') return;
     const interval = setInterval(() => {
-      const baseVel = 24500;
-      const fluctuation = Math.floor(Math.random() * 15) - 7;
+      const baseVel = 39400;
+      const fluctuation = Math.floor(Math.random() * 25) - 12;
       setVelocity(baseVel + fluctuation);
     }, 800);
     return () => clearInterval(interval);
@@ -193,15 +193,15 @@ export default function App() {
               </div>
             </div>
             <div className="flex flex-col mt-2 md:mt-0">
-              <span className="font-mono font-medium text-[32px] leading-none text-text-primary mb-1">238,855</span>
-              <span className="font-mono font-medium text-[11px] leading-none text-flare tracking-[0.25em]">MILES</span>
+              <span className="font-mono font-medium text-[32px] leading-none text-text-primary mb-1">384,400</span>
+              <span className="font-mono font-medium text-[11px] leading-none text-flare tracking-[0.25em]">KM</span>
               <span className="font-mono font-normal text-[11px] leading-none text-text-muted tracking-[0.25em] mt-1 uppercase">
                 {missionStatus === 'completed' ? 'Achieved Apogee' : 'Target Apogee'}
               </span>
             </div>
             <div className="flex flex-col mt-2 md:mt-0">
               <span className="font-mono font-medium text-[32px] leading-none text-text-primary mb-1">{velocity.toLocaleString()}</span>
-              <span className="font-mono font-medium text-[11px] leading-none text-flare tracking-[0.25em]">MPH</span>
+              <span className="font-mono font-medium text-[11px] leading-none text-flare tracking-[0.25em]">KM/H</span>
               <span className="font-mono font-normal text-[11px] leading-none text-text-muted tracking-[0.25em] mt-1 uppercase">
                 {missionStatus === 'completed' ? 'Max Re-entry Velocity' : 'Re-entry Velocity'}
               </span>
@@ -338,11 +338,11 @@ export default function App() {
               <div className="bg-surface border border-border p-3 rounded-sm">
                 <div className="flex justify-between font-mono text-xs mb-1">
                   <span className="text-text-secondary">Altitude</span>
-                  <span className="text-text-primary">115 x 1,200 mi</span>
+                  <span className="text-text-primary">185 x 1,930 km</span>
                 </div>
                 <div className="flex justify-between font-mono text-xs">
                   <span className="text-text-secondary">Velocity</span>
-                  <span className="text-text-primary">17,500 mph</span>
+                  <span className="text-text-primary">28,160 km/h</span>
                 </div>
               </div>
             </div>
@@ -355,7 +355,7 @@ export default function App() {
               <div className="bg-surface border border-border p-3 rounded-sm">
                 <div className="flex justify-between font-mono text-xs mb-1">
                   <span className="text-text-secondary">Max Altitude</span>
-                  <span className="text-text-primary">46,000 mi (74,000 km)</span>
+                  <span className="text-text-primary">74,000 km</span>
                 </div>
                 <div className="flex justify-between font-mono text-xs">
                   <span className="text-text-secondary">Orbit Period</span>
@@ -372,7 +372,7 @@ export default function App() {
               <div className="bg-surface border border-border p-3 rounded-sm">
                 <div className="flex justify-between font-mono text-xs mb-1">
                   <span className="text-text-secondary">Escape Velocity</span>
-                  <span className="text-text-primary">24,500 mph</span>
+                  <span className="text-text-primary">39,400 km/h</span>
                 </div>
                 <div className="flex justify-between font-mono text-xs">
                   <span className="text-text-secondary">Target</span>
@@ -389,11 +389,11 @@ export default function App() {
               <div className="bg-surface border border-border p-3 rounded-sm">
                 <div className="flex justify-between font-mono text-xs mb-1">
                   <span className="text-text-secondary">Lunar Distance</span>
-                  <span className="text-text-primary">4,600 mi (7,400 km)</span>
+                  <span className="text-text-primary">7,400 km</span>
                 </div>
                 <div className="flex justify-between font-mono text-xs">
                   <span className="text-text-secondary">Earth Distance</span>
-                  <span className="text-text-primary">~240,000 mi</span>
+                  <span className="text-text-primary">~386,000 km</span>
                 </div>
               </div>
             </div>
@@ -410,7 +410,7 @@ export default function App() {
                 </div>
                 <div className="flex justify-between font-mono text-xs">
                   <span className="text-text-secondary">Heat Shield</span>
-                  <span className="text-text-primary">5,000°F (2,760°C)</span>
+                  <span className="text-text-primary">2,760°C</span>
                 </div>
               </div>
             </div>
@@ -567,13 +567,13 @@ export default function App() {
             <h3 className="font-display font-extrabold text-2xl leading-[1.2] text-text-primary uppercase tracking-[0.05em] mb-3">SLS Block 1B</h3>
             <p className="mb-4">The Space Launch System. The only rocket capable of sending Orion, astronauts, and cargo directly to the Moon in a single launch.</p>
             <div className="flex flex-col mt-6">
-              <span className="font-mono font-medium text-2xl leading-none text-atmosphere mb-1">8.8M</span>
-              <span className="font-mono font-medium text-[11px] leading-none text-flare tracking-[0.25em]">LBS</span>
+              <span className="font-mono font-medium text-2xl leading-none text-atmosphere mb-1">3.99M</span>
+              <span className="font-mono font-medium text-[11px] leading-none text-flare tracking-[0.25em]">KG</span>
               <span className="font-mono font-normal text-[11px] leading-none text-text-muted tracking-[0.25em] mt-1 uppercase">Maximum Thrust</span>
             </div>
             <div className="flex flex-col mt-6">
-              <span className="font-mono font-medium text-2xl leading-none text-atmosphere mb-1">366</span>
-              <span className="font-mono font-medium text-[11px] leading-none text-flare tracking-[0.25em]">FEET</span>
+              <span className="font-mono font-medium text-2xl leading-none text-atmosphere mb-1">111</span>
+              <span className="font-mono font-medium text-[11px] leading-none text-flare tracking-[0.25em]">METERS</span>
               <span className="font-mono font-normal text-[11px] leading-none text-text-muted tracking-[0.25em] mt-1 uppercase">Total Height</span>
             </div>
           </div>
@@ -587,8 +587,8 @@ export default function App() {
               <span className="font-mono font-normal text-[11px] leading-none text-text-muted tracking-[0.25em] mt-1 uppercase">Individual Components</span>
             </div>
             <div className="flex flex-col mt-6">
-              <span className="font-mono font-medium text-2xl leading-none text-flare mb-1">5,000°</span>
-              <span className="font-mono font-medium text-[11px] leading-none text-flare tracking-[0.25em]">FAHRENHEIT</span>
+              <span className="font-mono font-medium text-2xl leading-none text-flare mb-1">2,760°</span>
+              <span className="font-mono font-medium text-[11px] leading-none text-flare tracking-[0.25em]">CELSIUS</span>
               <span className="font-mono font-normal text-[11px] leading-none text-text-muted tracking-[0.25em] mt-1 uppercase">Re-entry Heat (640 Gigajoules)</span>
             </div>
           </div>
@@ -782,11 +782,11 @@ export default function App() {
                 <>
                   <div className="border-l-2 border-atmosphere pl-6 py-1">
                     <h4 className="font-display font-bold text-xl text-text-primary uppercase tracking-wide mb-2">Solid Rocket Boosters</h4>
-                    <p className="text-sm text-text-secondary">Two five-segment solid rocket boosters provide more than 75% of the vehicle's thrust during the first two minutes of flight, producing 3.6 million pounds of thrust each.</p>
+                    <p className="text-sm text-text-secondary">Two five-segment solid rocket boosters provide more than 75% of the vehicle's thrust during the first two minutes of flight, producing 1.6 million kg of thrust each.</p>
                   </div>
                   <div className="border-l-2 border-border pl-6 py-1 transition-colors hover:border-atmosphere">
                     <h4 className="font-display font-bold text-xl text-text-primary uppercase tracking-wide mb-2">Core Stage</h4>
-                    <p className="text-sm text-text-secondary">Towering at 212 feet, it houses liquid hydrogen and liquid oxygen tanks to feed four RS-25 engines, providing the remaining 25% of thrust at liftoff.</p>
+                    <p className="text-sm text-text-secondary">Towering at 65 meters, it houses liquid hydrogen and liquid oxygen tanks to feed four RS-25 engines, providing the remaining 25% of thrust at liftoff.</p>
                   </div>
                   <div className="border-l-2 border-border pl-6 py-1 transition-colors hover:border-atmosphere">
                     <h4 className="font-display font-bold text-xl text-text-primary uppercase tracking-wide mb-2">Upper Stage (EUS)</h4>
@@ -843,13 +843,13 @@ export default function App() {
               <tbody>
                 <tr>
                   <td className="p-4 text-left border-b border-border text-text-secondary">Rocket Thrust</td>
-                  <td className="p-4 text-left border-b border-border text-text-muted">7.5 million lbs</td>
-                  <td className="p-4 text-left border-b border-border text-text-primary font-medium">8.8 million lbs</td>
+                  <td className="p-4 text-left border-b border-border text-text-muted">3.4 million kg</td>
+                  <td className="p-4 text-left border-b border-border text-text-primary font-medium">3.99 million kg</td>
                 </tr>
                 <tr>
                   <td className="p-4 text-left border-b border-border text-text-secondary">Habitable Volume</td>
-                  <td className="p-4 text-left border-b border-border text-text-muted">210 cubic feet</td>
-                  <td className="p-4 text-left border-b border-border text-text-primary font-medium">330 cubic feet</td>
+                  <td className="p-4 text-left border-b border-border text-text-muted">5.9 cubic meters</td>
+                  <td className="p-4 text-left border-b border-border text-text-primary font-medium">9.3 cubic meters</td>
                 </tr>
                 <tr>
                   <td className="p-4 text-left border-b border-border text-text-secondary">Computing Power</td>
