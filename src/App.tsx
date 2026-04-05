@@ -767,30 +767,30 @@ export default function App() {
                 <>
                   <div className="border-l-2 border-atmosphere pl-6 py-1">
                     <h4 className="font-display font-bold text-xl text-text-primary uppercase tracking-wide mb-2">Crew Module</h4>
-                    <p className="text-sm text-text-secondary">The pressurized habitat where up to four astronauts will live and work during the mission. Features a state-of-the-art glass cockpit and a 5,000°F-rated ablative heat shield.</p>
+                    <p className="text-sm text-text-secondary">The pressurized habitat where up to four astronauts will live and work during the mission. Features a state-of-the-art glass cockpit and a 2,760°C-rated ablative heat shield. Measures 5m in diameter and 3.3m in height, providing 9m³ of habitable volume.</p>
                   </div>
                   <div className="border-l-2 border-border pl-6 py-1 transition-colors hover:border-atmosphere">
                     <h4 className="font-display font-bold text-xl text-text-primary uppercase tracking-wide mb-2">European Service Module</h4>
-                    <p className="text-sm text-text-secondary">Provided by ESA, this is the powerhouse of the spacecraft. It supplies electricity, propulsion, thermal control, air, and water for the crew.</p>
+                    <p className="text-sm text-text-secondary">Provided by ESA, this is the powerhouse of the spacecraft. It supplies electricity, propulsion, thermal control, air, and water for the crew. It measures 4m in diameter and 4m in height.</p>
                   </div>
                   <div className="border-l-2 border-border pl-6 py-1 transition-colors hover:border-atmosphere">
                     <h4 className="font-display font-bold text-xl text-text-primary uppercase tracking-wide mb-2">Launch Abort System</h4>
-                    <p className="text-sm text-text-secondary">Positioned above the crew module, this solid-rocket-powered system can activate in milliseconds to pull the capsule away from a failing launch vehicle.</p>
+                    <p className="text-sm text-text-secondary">Positioned above the crew module, this 14m tall solid-rocket-powered system can activate in milliseconds to pull the capsule away from a failing launch vehicle.</p>
                   </div>
                 </>
               ) : (
                 <>
                   <div className="border-l-2 border-atmosphere pl-6 py-1">
                     <h4 className="font-display font-bold text-xl text-text-primary uppercase tracking-wide mb-2">Solid Rocket Boosters</h4>
-                    <p className="text-sm text-text-secondary">Two five-segment solid rocket boosters provide more than 75% of the vehicle's thrust during the first two minutes of flight, producing 1.6 million kg of thrust each.</p>
+                    <p className="text-sm text-text-secondary">Two five-segment solid rocket boosters provide more than 75% of the vehicle's thrust during the first two minutes of flight, producing 1.6 million kg of thrust each. Each booster is 54m tall and 3.7m in diameter.</p>
                   </div>
                   <div className="border-l-2 border-border pl-6 py-1 transition-colors hover:border-atmosphere">
                     <h4 className="font-display font-bold text-xl text-text-primary uppercase tracking-wide mb-2">Core Stage</h4>
-                    <p className="text-sm text-text-secondary">Towering at 65 meters, it houses liquid hydrogen and liquid oxygen tanks to feed four RS-25 engines, providing the remaining 25% of thrust at liftoff.</p>
+                    <p className="text-sm text-text-secondary">Towering at 65 meters and 8.4m in diameter, it houses liquid hydrogen and liquid oxygen tanks to feed four RS-25 engines, providing the remaining 25% of thrust at liftoff.</p>
                   </div>
                   <div className="border-l-2 border-border pl-6 py-1 transition-colors hover:border-atmosphere">
                     <h4 className="font-display font-bold text-xl text-text-primary uppercase tracking-wide mb-2">Upper Stage (EUS)</h4>
-                    <p className="text-sm text-text-secondary">The Exploration Upper Stage is a powerful in-space stage that performs the trans-lunar injection (TLI) burn to send Orion and its crew to the Moon.</p>
+                    <p className="text-sm text-text-secondary">The Exploration Upper Stage is a powerful in-space stage that performs the trans-lunar injection (TLI) burn to send Orion and its crew to the Moon. It stands 29m tall with an 8.4m diameter.</p>
                   </div>
                 </>
               )}
@@ -883,8 +883,22 @@ export default function App() {
         <a href="#" className="font-mono font-bold text-[12px] leading-none tracking-[0.25em] uppercase py-4 px-8 cursor-pointer inline-block no-underline rounded-sm transition-all duration-200 bg-transparent text-atmosphere border border-atmosphere hover:bg-atmosphere hover:text-space">Access Mission Telemetry</a>
       </section>
 
-      <footer className="border-t border-border py-10 text-center">
-        <div className="max-w-[1280px] mx-auto px-6 md:px-10 lg:px-20">
+      <footer className="border-t border-border py-12 text-center relative z-10">
+        <div className="max-w-[1280px] mx-auto px-6 md:px-10 lg:px-20 flex flex-col items-center">
+          <div className="flex items-center justify-center gap-8 mb-8">
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" 
+              alt="NASA Logo" 
+              className="h-16 w-auto opacity-80 hover:opacity-100 transition-opacity"
+              referrerPolicy="no-referrer"
+            />
+            <img 
+              src="https://en.wikipedia.org/wiki/Special:FilePath/Artemis_II_patch.png" 
+              alt="Artemis II Mission Patch" 
+              className="h-20 w-auto opacity-80 hover:opacity-100 transition-opacity"
+              referrerPolicy="no-referrer"
+            />
+          </div>
           <div className="font-display font-extrabold text-xl leading-none text-text-muted tracking-[0.04em]">NASA / ARTEMIS</div>
           <p className="font-mono text-[11px] text-text-muted uppercase mt-4">For all mankind. Not an official NASA communication.</p>
         </div>
