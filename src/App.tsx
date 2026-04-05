@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { ARTEMIS_II_LAUNCH_DATE, ARTEMIS_II_SPLASHDOWN_DATE } from './constants';
 
 const comparisonData = [
   {
@@ -29,8 +30,8 @@ export default function App() {
 
   // Dynamic Mission Status Logic
   const currentDate = new Date();
-  const launchDate = new Date('2026-04-01T00:00:00Z');
-  const splashdownDate = new Date('2026-04-11T00:00:00Z'); // 10 days later
+  const launchDate = new Date(ARTEMIS_II_LAUNCH_DATE);
+  const splashdownDate = new Date(ARTEMIS_II_SPLASHDOWN_DATE); // 10 days later
 
   let missionStatus: 'upcoming' | 'active' | 'completed' = 'upcoming';
   if (currentDate > splashdownDate) {
