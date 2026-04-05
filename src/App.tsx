@@ -193,10 +193,10 @@ export default function App() {
               </div>
             </div>
             <div className="flex flex-col mt-2 md:mt-0">
-              <span className="font-mono font-medium text-[32px] leading-none text-text-primary mb-1">384,400</span>
+              <span className="font-mono font-medium text-[32px] leading-none text-text-primary mb-1">406,773</span>
               <span className="font-mono font-medium text-[11px] leading-none text-flare tracking-[0.25em]">KM</span>
               <span className="font-mono font-normal text-[11px] leading-none text-text-muted tracking-[0.25em] mt-1 uppercase">
-                {missionStatus === 'completed' ? 'Achieved Apogee' : 'Target Apogee'}
+                {missionStatus === 'completed' ? 'Max Earth Distance' : 'Target Max Distance'}
               </span>
             </div>
             <div className="flex flex-col mt-2 md:mt-0">
@@ -392,8 +392,8 @@ export default function App() {
                   <span className="text-text-primary">7,400 km</span>
                 </div>
                 <div className="flex justify-between font-mono text-xs">
-                  <span className="text-text-secondary">Earth Distance</span>
-                  <span className="text-text-primary">~386,000 km</span>
+                  <span className="text-text-secondary">Max Earth Distance</span>
+                  <span className="text-text-primary">406,773 km</span>
                 </div>
               </div>
             </div>
@@ -449,9 +449,9 @@ export default function App() {
               </div>
               <h3 className={`font-display font-extrabold text-2xl leading-[1.2] ${missionStatus === 'active' ? 'text-atmosphere' : 'text-text-primary'} uppercase mb-2`}>Artemis II</h3>
               <p className="max-w-[680px] mb-4">
-                {missionStatus === 'active' ? 'Four astronauts are currently venturing around the Moon in a hybrid free-return trajectory. The first crewed mission beyond low-Earth orbit in over 50 years, actively testing vital life support systems.' :
-                 missionStatus === 'completed' ? 'Four astronauts successfully ventured around the Moon in a hybrid free-return trajectory. The first crewed mission beyond low-Earth orbit in over 50 years, completely validating vital life support systems.' :
-                 'Four astronauts will venture around the Moon in a hybrid free-return trajectory. The first crewed mission beyond low-Earth orbit in over 50 years, testing vital life support systems.'}
+                {missionStatus === 'active' ? 'Four astronauts are currently venturing around the Moon in a hybrid free-return trajectory. The first crewed mission beyond low-Earth orbit in over 50 years, actively testing vital life support systems and setting a new human distance record of 406,773 km from Earth.' :
+                 missionStatus === 'completed' ? 'Four astronauts successfully ventured around the Moon in a hybrid free-return trajectory. The first crewed mission beyond low-Earth orbit in over 50 years, completely validating vital life support systems and setting a new human distance record of 406,773 km from Earth.' :
+                 'Four astronauts will venture around the Moon in a hybrid free-return trajectory. The first crewed mission beyond low-Earth orbit in over 50 years, testing vital life support systems and aiming to set a new human distance record of 406,773 km from Earth.'}
               </p>
             </div>
             
