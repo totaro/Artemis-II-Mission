@@ -140,7 +140,7 @@ export default function App() {
       </nav>
 
       {/* Hero Section */}
-      <header className="min-h-[90vh] flex flex-col justify-center py-32 lg:py-0 relative overflow-hidden bg-[radial-gradient(ellipse_300px_200px_at_50%_-5%,rgba(200,205,214,0.15)_0%,transparent_70%),radial-gradient(ellipse_100%_40%_at_50%_110%,rgba(26,138,255,0.15)_0%,transparent_60%),radial-gradient(ellipse_200px_100px_at_52%_72%,rgba(255,179,71,0.1)_0%,transparent_60%),var(--color-space)]">
+      <header className="min-h-[90vh] flex flex-col justify-center pt-40 pb-32 lg:pt-48 lg:pb-32 relative overflow-hidden bg-[radial-gradient(ellipse_300px_200px_at_50%_-5%,rgba(200,205,214,0.15)_0%,transparent_70%),radial-gradient(ellipse_100%_40%_at_50%_110%,rgba(26,138,255,0.15)_0%,transparent_60%),radial-gradient(ellipse_200px_100px_at_52%_72%,rgba(255,179,71,0.1)_0%,transparent_60%),var(--color-space)]">
         <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[120vw] h-[120vw] rounded-full border border-atmosphere opacity-10 pointer-events-none"></div>
         <div className="crosshair top-10 left-10"></div>
         <div className="crosshair top-10 right-10"></div>
@@ -222,6 +222,7 @@ export default function App() {
 
       {/* About Section */}
       <section id="about" className="max-w-[1280px] mx-auto px-6 md:px-10 lg:px-20 py-[clamp(80px,12vw,160px)] relative z-10">
+        <div className="absolute top-6 md:top-10 lg:top-12 right-6 md:right-10 lg:right-20 font-mono text-[40px] md:text-[80px] text-border leading-none select-none pointer-events-none">01</div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start">
           <div>
             <p className="font-mono font-medium text-[11px] leading-none text-flare tracking-[0.25em] uppercase mb-6">// THE PROGRAM</p>
@@ -267,6 +268,7 @@ export default function App() {
 
       {/* Trajectory Section */}
       <section id="trajectory" className="max-w-[1280px] mx-auto px-6 md:px-10 lg:px-20 py-[clamp(80px,12vw,160px)] relative z-10">
+        <div className="absolute top-6 md:top-10 lg:top-12 right-6 md:right-10 lg:right-20 font-mono text-[40px] md:text-[80px] text-border leading-none select-none pointer-events-none">02</div>
         <div className="text-center mb-16">
           <p className="font-mono font-medium text-[11px] leading-none text-flare tracking-[0.25em] uppercase mb-6">// ORBITAL MECHANICS</p>
           <h2 className="font-display font-black text-[clamp(40px,6vw,88px)] leading-[1.1] text-text-primary uppercase tracking-[0.04em] mb-6">Hybrid Free-Return<br/>Trajectory</h2>
@@ -423,6 +425,7 @@ export default function App() {
 
       {/* Mission Captures Section */}
       <section id="captures" className="max-w-[1280px] mx-auto px-6 md:px-10 lg:px-20 py-[clamp(80px,12vw,160px)] relative z-10">
+        <div className="absolute top-6 md:top-10 lg:top-12 right-6 md:right-10 lg:right-20 font-mono text-[40px] md:text-[80px] text-border leading-none select-none pointer-events-none">03</div>
         <div className="mb-16">
           <p className="font-mono font-medium text-[11px] leading-none text-flare tracking-[0.25em] uppercase">// MISSION CAPTURES</p>
         </div>
@@ -430,7 +433,7 @@ export default function App() {
         <div className="flex flex-col gap-24 lg:gap-32">
           {/* Capture 1: Earth (April 2) */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-            <div className="lg:col-span-5">
+            <div className="lg:col-span-5 order-2 lg:order-1">
               <h2 className="font-display font-black text-[clamp(40px,5vw,72px)] leading-[1.1] text-text-primary uppercase tracking-[0.04em] mb-6">Earth in the<br/>Rear-View</h2>
               <p className="text-lg text-text-secondary mb-8">
                 A view of Earth taken by NASA astronaut and Artemis II Commander Reid Wiseman from one of the Orion spacecraft's windows after completing the translunar injection burn on April 2, 2026. The image features two auroras and zodiacal light as the Earth eclipses the Sun.
@@ -441,7 +444,7 @@ export default function App() {
                 <div><span className="text-text-primary">NASA ID:</span> art002e000192</div>
               </div>
             </div>
-            <div className="lg:col-span-7 relative group">
+            <div className="lg:col-span-7 relative group order-1 lg:order-2">
               <div className="absolute -inset-1 bg-gradient-to-r from-atmosphere to-flare opacity-20 blur-xl group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
               <div className="relative border border-border bg-surface p-2 rounded-sm">
                 <img 
@@ -459,7 +462,7 @@ export default function App() {
 
           {/* Capture 2: Orion Selfie (April 3) */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-            <div className="lg:col-span-7 lg:order-1 order-2 relative group">
+            <div className="lg:col-span-7 order-1 relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-atmosphere to-flare opacity-20 blur-xl group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
               <div className="relative border border-border bg-surface p-2 rounded-sm">
                 <img 
@@ -473,7 +476,7 @@ export default function App() {
                 </div>
               </div>
             </div>
-            <div className="lg:col-span-5 lg:order-2 order-1">
+            <div className="lg:col-span-5 order-2">
               <h2 className="font-display font-black text-[clamp(40px,5vw,72px)] leading-[1.1] text-text-primary uppercase tracking-[0.04em] mb-6">Orion<br/>Selfie</h2>
               <p className="text-lg text-text-secondary mb-8">
                 Orion snapped this high-resolution selfie in space with a camera mounted on one of its solar array wings during a routine external inspection of the spacecraft on the second day into the Artemis II mission.
@@ -488,7 +491,7 @@ export default function App() {
 
           {/* Capture 3: Moon (April 4) */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-            <div className="lg:col-span-5">
+            <div className="lg:col-span-5 order-2 lg:order-1">
               <h2 className="font-display font-black text-[clamp(40px,5vw,72px)] leading-[1.1] text-text-primary uppercase tracking-[0.04em] mb-6">History in<br/>the Making</h2>
               <p className="text-lg text-text-secondary mb-8">
                 The Artemis II crew took this photo on day 4 of their journey to the Moon. In it, the Moon is oriented with the South Pole at the top and we are beginning to see parts of the lunar far side. Orientale basin is on the right edge of the lunar disk in this image. Artemis II marks the first time that humans have seen the entire basin.
@@ -499,7 +502,7 @@ export default function App() {
                 <div><span className="text-text-primary">NASA ID:</span> art002e009006</div>
               </div>
             </div>
-            <div className="lg:col-span-7 relative group">
+            <div className="lg:col-span-7 relative group order-1 lg:order-2">
               <div className="absolute -inset-1 bg-gradient-to-r from-atmosphere to-flare opacity-20 blur-xl group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
               <div className="relative border border-border bg-surface p-2 rounded-sm">
                 <img 
@@ -521,6 +524,7 @@ export default function App() {
 
       {/* Timeline Section */}
       <section id="timeline" className="max-w-[1280px] mx-auto px-6 md:px-10 lg:px-20 py-[clamp(80px,12vw,160px)] relative z-10">
+        <div className="absolute top-6 md:top-10 lg:top-12 right-6 md:right-10 lg:right-20 font-mono text-[40px] md:text-[80px] text-border leading-none select-none pointer-events-none">04</div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start">
           <div>
             <p className="font-mono font-medium text-[11px] leading-none text-flare tracking-[0.25em] uppercase mb-6">// FLIGHT PATH</p>
@@ -573,6 +577,7 @@ export default function App() {
 
       {/* Crew Section */}
       <section id="crew" className="max-w-[1280px] mx-auto px-6 md:px-10 lg:px-20 py-[clamp(80px,12vw,160px)] relative z-10">
+        <div className="absolute top-6 md:top-10 lg:top-12 right-6 md:right-10 lg:right-20 font-mono text-[40px] md:text-[80px] text-border leading-none select-none pointer-events-none">05</div>
         <div className="text-center mb-16">
           <p className="font-mono font-medium text-[11px] leading-none text-flare tracking-[0.25em] uppercase mb-6">// THE VANGUARD</p>
           <h2 className="font-display font-black text-[clamp(40px,6vw,88px)] leading-[1.1] text-text-primary uppercase tracking-[0.04em] mb-6">The Artemis II Crew</h2>
@@ -658,6 +663,7 @@ export default function App() {
 
       {/* Hardware Section */}
       <section id="hardware" className="max-w-[1280px] mx-auto px-6 md:px-10 lg:px-20 py-[clamp(80px,12vw,160px)] relative z-10">
+        <div className="absolute top-6 md:top-10 lg:top-12 right-6 md:right-10 lg:right-20 font-mono text-[40px] md:text-[80px] text-border leading-none select-none pointer-events-none">06</div>
         <p className="font-mono font-medium text-[11px] leading-none text-flare tracking-[0.25em] uppercase mb-6">// THE FLEET OF DISCOVERY</p>
         <h2 className="font-display font-black text-[clamp(40px,6vw,88px)] leading-[1.1] text-text-primary uppercase tracking-[0.04em] mb-8">Engineered for<br/>The Void</h2>
         
@@ -713,6 +719,7 @@ export default function App() {
 
       {/* Blueprint Section */}
       <section id="blueprint" className="max-w-[1280px] mx-auto px-6 md:px-10 lg:px-20 py-[clamp(80px,12vw,160px)] relative z-10">
+        <div className="absolute top-6 md:top-10 lg:top-12 right-6 md:right-10 lg:right-20 font-mono text-[40px] md:text-[80px] text-border leading-none select-none pointer-events-none">07</div>
         <div className="flex flex-wrap gap-4 mb-12">
           <button 
             onClick={() => setActiveBlueprint('orion')}
@@ -902,6 +909,7 @@ export default function App() {
 
       {/* History Section */}
       <section id="history" className="max-w-[1280px] mx-auto px-6 md:px-10 lg:px-20 py-[clamp(80px,12vw,160px)] relative z-10">
+        <div className="absolute top-6 md:top-10 lg:top-12 right-6 md:right-10 lg:right-20 font-mono text-[40px] md:text-[80px] text-border leading-none select-none pointer-events-none">08</div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start">
           <div>
             <p className="font-mono font-medium text-[11px] leading-none text-flare tracking-[0.25em] uppercase mb-6">// ON THE SHOULDERS OF GIANTS</p>
@@ -974,12 +982,15 @@ export default function App() {
       <div className="section-horizon"></div>
 
       {/* Future Section */}
-      <section id="future" className="max-w-[800px] mx-auto px-6 md:px-10 lg:px-20 py-[clamp(80px,12vw,160px)] relative z-10 text-center">
-        <p className="font-mono font-medium text-[11px] leading-none text-flare tracking-[0.25em] uppercase mb-6">// IGNITION INITIATIVE</p>
-        <h2 className="font-display font-black text-[clamp(40px,6vw,88px)] leading-[1.1] text-text-primary uppercase tracking-[0.04em] mb-8">The Lunar Base<br/>& Beyond</h2>
-        <p className="text-[clamp(18px,2vw,22px)] text-text-primary max-w-[680px] mx-auto mb-8">Phase 3 aims to establish the first deep-space outpost.</p>
-        <p className="max-w-[680px] mx-auto mb-12">With the deployment of uncrewed Lunar Terrain Vehicles, JAXA pressurized rovers, and autonomous "MoonFall" drones scanning the dark craters of the South Pole, Artemis is laying the literal groundwork for humanity's next giant leap: Mars.</p>
-        <a href="#" className="font-mono font-bold text-[12px] leading-none tracking-[0.25em] uppercase py-4 px-8 cursor-pointer inline-block no-underline rounded-sm transition-all duration-200 bg-transparent text-atmosphere border border-atmosphere hover:bg-atmosphere hover:text-space">Access Mission Telemetry</a>
+      <section id="future" className="max-w-[1280px] mx-auto px-6 md:px-10 lg:px-20 py-[clamp(80px,12vw,160px)] relative z-10 text-center">
+        <div className="absolute top-6 md:top-10 lg:top-12 right-6 md:right-10 lg:right-20 font-mono text-[40px] md:text-[80px] text-border leading-none select-none pointer-events-none">09</div>
+        <div className="max-w-[800px] mx-auto">
+          <p className="font-mono font-medium text-[11px] leading-none text-flare tracking-[0.25em] uppercase mb-6">// IGNITION INITIATIVE</p>
+          <h2 className="font-display font-black text-[clamp(40px,6vw,88px)] leading-[1.1] text-text-primary uppercase tracking-[0.04em] mb-8">The Lunar Base<br/>& Beyond</h2>
+          <p className="text-[clamp(18px,2vw,22px)] text-text-primary max-w-[680px] mx-auto mb-8">Phase 3 aims to establish the first deep-space outpost.</p>
+          <p className="max-w-[680px] mx-auto mb-12">With the deployment of uncrewed Lunar Terrain Vehicles, JAXA pressurized rovers, and autonomous "MoonFall" drones scanning the dark craters of the South Pole, Artemis is laying the literal groundwork for humanity's next giant leap: Mars.</p>
+          <a href="#" className="font-mono font-bold text-[12px] leading-none tracking-[0.25em] uppercase py-4 px-8 cursor-pointer inline-block no-underline rounded-sm transition-all duration-200 bg-transparent text-atmosphere border border-atmosphere hover:bg-atmosphere hover:text-space">Access Mission Telemetry</a>
+        </div>
       </section>
 
       <footer className="border-t border-border py-12 text-center relative z-10">
