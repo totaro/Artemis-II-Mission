@@ -140,7 +140,7 @@ export default function App() {
       </nav>
 
       {/* Hero Section */}
-      <header className="min-h-[90vh] flex flex-col justify-center pt-40 pb-32 lg:pt-48 lg:pb-32 relative overflow-hidden bg-[radial-gradient(ellipse_300px_200px_at_50%_-5%,rgba(200,205,214,0.15)_0%,transparent_70%),radial-gradient(ellipse_100%_40%_at_50%_110%,rgba(26,138,255,0.15)_0%,transparent_60%),radial-gradient(ellipse_200px_100px_at_52%_72%,rgba(255,179,71,0.1)_0%,transparent_60%),var(--color-space)]">
+      <header className="min-h-screen flex flex-col justify-center pt-24 pb-12 relative overflow-hidden bg-[radial-gradient(ellipse_300px_200px_at_50%_-5%,rgba(200,205,214,0.15)_0%,transparent_70%),radial-gradient(ellipse_100%_40%_at_50%_110%,rgba(26,138,255,0.15)_0%,transparent_60%),radial-gradient(ellipse_200px_100px_at_52%_72%,rgba(255,179,71,0.1)_0%,transparent_60%),var(--color-space)]">
         <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[120vw] h-[120vw] rounded-full border border-atmosphere opacity-10 pointer-events-none"></div>
         <div className="crosshair top-10 left-10"></div>
         <div className="crosshair top-10 right-10"></div>
@@ -148,44 +148,29 @@ export default function App() {
         <div className="crosshair bottom-10 right-10"></div>
 
         <div className="max-w-[1280px] mx-auto px-6 md:px-10 lg:px-20 relative z-10 text-center flex flex-col items-center">
-          <motion.p 
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="font-mono font-medium text-[11px] leading-none text-flare tracking-[0.25em] uppercase mb-6"
+          <p 
+            className="hero-overline font-mono font-medium text-[11px] leading-none text-flare tracking-[0.25em] uppercase mb-6"
           >
             // MISSION INITIATION
-          </motion.p>
-          <motion.h1 
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="font-display font-black text-[clamp(64px,12vw,160px)] leading-[0.9] text-text-primary uppercase tracking-[0.04em] my-4 drop-shadow-[0_0_40px_rgba(26,138,255,0.2)]"
+          </p>
+          <h1 
+            className="hero-title font-display font-black text-[clamp(64px,12vw,160px)] leading-[0.9] text-text-primary uppercase tracking-[0.04em] my-4 drop-shadow-[0_0_40px_rgba(26,138,255,0.2)]"
           >
             ARTEMIS <span>II</span>
-          </motion.h1>
-          <motion.h2 
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            className="font-display font-bold text-[clamp(16px,3vw,24px)] leading-none text-flare tracking-[0.4em] uppercase mb-8"
+          </h1>
+          <h2 
+            className="hero-subtitle font-display font-bold text-[clamp(16px,3vw,24px)] leading-none text-flare tracking-[0.4em] uppercase mb-8"
           >
             MISSION TO THE MOON
-          </motion.h2>
-          <motion.p 
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-            className="text-[clamp(18px,2vw,22px)] text-text-primary max-w-[680px] mb-6"
+          </h2>
+          <p 
+            className="hero-text text-[clamp(18px,2vw,22px)] text-text-primary max-w-[680px] mb-6"
           >
             Fifty years later, we are going back—not just to visit, but to stay. The dawn of the Artemis Generation begins now.
-          </motion.p>
+          </p>
           
-          <motion.div 
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1.0 }}
-            className="relative flex flex-col md:flex-row gap-6 md:gap-10 mt-16 p-6 md:px-10 bg-surface/60 border border-border backdrop-blur-md rounded-sm w-full md:w-auto text-center md:text-left"
+          <div 
+            className="hero-cta relative flex flex-col md:flex-row gap-6 md:gap-10 mt-16 p-6 md:px-10 bg-surface/60 border border-border backdrop-blur-md rounded-sm w-full md:w-auto text-center md:text-left"
           >
             <div className="absolute top-0 left-0 w-full flex justify-center md:justify-start md:pl-6 -translate-y-1/2">
               <div className={`bg-[#050508] border ${missionStatus === 'active' ? 'border-flare/50 text-flare shadow-[0_0_8px_rgba(255,179,71,0.15)]' : 'border-atmosphere/50 text-atmosphere shadow-[0_0_8px_rgba(26,138,255,0.15)]'} font-mono text-[9px] tracking-[0.2em] uppercase px-2 py-1 flex items-center gap-2`}>
@@ -214,7 +199,7 @@ export default function App() {
                 {missionStatus === 'completed' ? 'Total Mission Duration' : 'Mission Duration'}
               </span>
             </div>
-          </motion.div>
+          </div>
         </div>
       </header>
 
