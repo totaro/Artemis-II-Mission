@@ -428,7 +428,7 @@ export default function App() {
         </div>
         
         <div className="flex flex-col gap-24 lg:gap-32">
-          {/* Capture 1: Earth */}
+          {/* Capture 1: Earth (April 2) */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-5">
               <h2 className="font-display font-black text-[clamp(40px,5vw,72px)] leading-[1.1] text-text-primary uppercase tracking-[0.04em] mb-6">Earth in the<br/>Rear-View</h2>
@@ -457,9 +457,49 @@ export default function App() {
             </div>
           </div>
 
-          {/* Capture 2: Moon */}
+          {/* Capture 2: Orion Selfie (April 3) */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-7 lg:order-1 order-2 relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-atmosphere to-flare opacity-20 blur-xl group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+              <div className="relative border border-border bg-surface p-2 rounded-sm">
+                <img 
+                  src="https://images-assets.nasa.gov/image/art002e004357/art002e004357~large.jpg" 
+                  alt="Orion Snaps a Selfie During External Inspection" 
+                  className="w-full h-auto object-cover rounded-sm"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute bottom-4 right-4 bg-black/80 backdrop-blur-md border border-white/10 px-3 py-1.5 font-mono text-[10px] text-white tracking-widest uppercase">
+                  Solar Array Camera
+                </div>
+              </div>
+            </div>
+            <div className="lg:col-span-5 lg:order-2 order-1">
+              <h2 className="font-display font-black text-[clamp(40px,5vw,72px)] leading-[1.1] text-text-primary uppercase tracking-[0.04em] mb-6">Orion<br/>Selfie</h2>
+              <p className="text-lg text-text-secondary mb-8">
+                Orion snapped this high-resolution selfie in space with a camera mounted on one of its solar array wings during a routine external inspection of the spacecraft on the second day into the Artemis II mission.
+              </p>
+              <div className="flex flex-col gap-4 font-mono text-xs text-text-muted uppercase tracking-wider border-l border-flare/30 pl-4">
+                <div><span className="text-text-primary">Date:</span> April 3, 2026</div>
+                <div><span className="text-text-primary">Photographer:</span> NASA</div>
+                <div><span className="text-text-primary">NASA ID:</span> art002e004357</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Capture 3: Moon (April 4) */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            <div className="lg:col-span-5">
+              <h2 className="font-display font-black text-[clamp(40px,5vw,72px)] leading-[1.1] text-text-primary uppercase tracking-[0.04em] mb-6">History in<br/>the Making</h2>
+              <p className="text-lg text-text-secondary mb-8">
+                The Artemis II crew took this photo on day 4 of their journey to the Moon. In it, the Moon is oriented with the South Pole at the top and we are beginning to see parts of the lunar far side. Orientale basin is on the right edge of the lunar disk in this image. Artemis II marks the first time that humans have seen the entire basin.
+              </p>
+              <div className="flex flex-col gap-4 font-mono text-xs text-text-muted uppercase tracking-wider border-l border-flare/30 pl-4">
+                <div><span className="text-text-primary">Date:</span> April 4, 2026</div>
+                <div><span className="text-text-primary">Photographer:</span> Artemis II Crew</div>
+                <div><span className="text-text-primary">NASA ID:</span> art002e009006</div>
+              </div>
+            </div>
+            <div className="lg:col-span-7 relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-atmosphere to-flare opacity-20 blur-xl group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
               <div className="relative border border-border bg-surface p-2 rounded-sm">
                 <img 
@@ -471,17 +511,6 @@ export default function App() {
                 <div className="absolute bottom-4 right-4 bg-black/80 backdrop-blur-md border border-white/10 px-3 py-1.5 font-mono text-[10px] text-white tracking-widest uppercase">
                   Lunar Far Side
                 </div>
-              </div>
-            </div>
-            <div className="lg:col-span-5 lg:order-2 order-1">
-              <h2 className="font-display font-black text-[clamp(40px,5vw,72px)] leading-[1.1] text-text-primary uppercase tracking-[0.04em] mb-6">History in<br/>the Making</h2>
-              <p className="text-lg text-text-secondary mb-8">
-                The Artemis II crew took this photo on day 4 of their journey to the Moon. In it, the Moon is oriented with the South Pole at the top and we are beginning to see parts of the lunar far side. Orientale basin is on the right edge of the lunar disk in this image. Artemis II marks the first time that humans have seen the entire basin.
-              </p>
-              <div className="flex flex-col gap-4 font-mono text-xs text-text-muted uppercase tracking-wider border-l border-flare/30 pl-4">
-                <div><span className="text-text-primary">Date:</span> April 4, 2026</div>
-                <div><span className="text-text-primary">Photographer:</span> Artemis II Crew</div>
-                <div><span className="text-text-primary">NASA ID:</span> art002e009006</div>
               </div>
             </div>
           </div>
