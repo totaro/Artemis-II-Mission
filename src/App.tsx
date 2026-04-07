@@ -502,6 +502,64 @@ export default function App() {
               </div>
             </div>
           </div>
+
+          {/* Capture 4: Earth and Moon (April 6) */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            <div className="lg:col-span-7 order-1 relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-atmosphere to-flare opacity-20 blur-xl group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+              <div className="relative border border-border bg-surface p-2 rounded-sm">
+                <img 
+                  src="https://images-assets.nasa.gov/image/orion_earth_moon_20221121/orion_earth_moon_20221121~large.jpg" 
+                  alt="Earth behind the Moon from Orion" 
+                  className="w-full h-auto object-cover rounded-sm"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute bottom-4 left-4 bg-black/80 backdrop-blur-md border border-white/10 px-3 py-1.5 font-mono text-[10px] text-white tracking-widest uppercase">
+                  Solar Array Camera
+                </div>
+              </div>
+            </div>
+            <div className="lg:col-span-5 order-2">
+              <h2 className="font-display font-black text-[clamp(40px,5vw,72px)] leading-[1.1] text-text-primary uppercase tracking-[0.04em] mb-6">Farther Into<br/>Space</h2>
+              <p className="text-lg text-text-secondary mb-8">
+                The Orion Spacecraft, the Earth and the Moon are seen from a camera as the Artemis II crew and spacecraft travel farther into Space.
+              </p>
+              <div className="flex flex-col gap-4 font-mono text-xs text-text-muted uppercase tracking-wider border-l border-flare/30 pl-4">
+                <div><span className="text-text-primary">Date:</span> April 6, 2026</div>
+                <div><span className="text-text-primary">Photographer:</span> Artemis II Crew</div>
+                <div><span className="text-text-primary">NASA ID:</span> orion_earth_moon_20221121</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Capture 5: Orientale Basin (April 6) */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            <div className="lg:col-span-5 order-2 lg:order-1">
+              <h2 className="font-display font-black text-[clamp(40px,5vw,72px)] leading-[1.1] text-text-primary uppercase tracking-[0.04em] mb-6">Orientale<br/>Basin</h2>
+              <p className="text-lg text-text-secondary mb-8">
+                This striking high-resolution image was captured on April 6, 2026, as Orion swung around the Moon, reaching its closest approach at 7:00 p.m. EDT. During this maneuver, the spacecraft reached a record-breaking distance of approximately 406,771 km (252,756 miles) from Earth. It reveals the Orientale Basin (the dark patch on the left), a massive impact crater that straddles the boundary between the near and far sides, alongside ancient lava flows. In this view, the near side is visible on the right, while the rugged terrain of the lunar far side dominates the left.
+              </p>
+              <div className="flex flex-col gap-4 font-mono text-xs text-text-muted uppercase tracking-wider border-l border-flare/30 pl-4">
+                <div><span className="text-text-primary">Date:</span> April 6, 2026</div>
+                <div><span className="text-text-primary">Photographer:</span> Artemis II Crew</div>
+                <div><span className="text-text-primary">NASA ID:</span> art001e000265</div>
+              </div>
+            </div>
+            <div className="lg:col-span-7 relative group order-1 lg:order-2">
+              <div className="absolute -inset-1 bg-gradient-to-r from-atmosphere to-flare opacity-20 blur-xl group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+              <div className="relative border border-border bg-surface p-2 rounded-sm">
+                <img 
+                  src="https://images-assets.nasa.gov/image/art001e000265/art001e000265~large.jpg" 
+                  alt="View of the Lunar Far Side and Orientale Basin" 
+                  className="w-full h-auto object-cover rounded-sm"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute bottom-4 right-4 bg-black/80 backdrop-blur-md border border-white/10 px-3 py-1.5 font-mono text-[10px] text-white tracking-widest uppercase">
+                  Lunar Far Side
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
