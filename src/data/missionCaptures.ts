@@ -78,5 +78,57 @@ export const missionCaptures: MissionCapture[] = [
     imageLabel: 'Lunar Far Side',
     imageLabelPosition: 'bottom-right',
     layout: 'text-left'
+  },
+  {
+    id: 'capture-6',
+    title: 'Earthset\nOver the Moon',
+    description: 'Earth sets over the Moon’s curved limb in this photo captured by the Artemis II crew during their journey around the far side of the Moon. Orientale basin is perched on the edge of the visible lunar surface. Hertzsprung Basin appears as two subtle concentric rings, which are interrupted by Vavilov, a younger crater superimposed over the older structure.',
+    date: 'April 6, 2026',
+    photographer: 'Artemis II Crew',
+    nasaId: 'art002e009287',
+    imageUrl: 'https://images-assets.nasa.gov/image/art002e009287/art002e009287~large.jpg',
+    imageAlt: 'Earth setting over the Moon\'s curved limb',
+    imageLabel: 'Lunar Far Side',
+    imageLabelPosition: 'bottom-left',
+    layout: 'text-right'
+  },
+  {
+    id: 'capture-7',
+    title: 'Earthset\nThrough the Window',
+    description: 'Earthset captured through the Orion spacecraft window at 6:41 p.m. EDT, April 6, 2026, during the Artemis II crew’s flyby of the Moon. A muted blue Earth with bright white clouds sets behind the cratered lunar surface. In the foreground, Ohm crater has terraced edges and a flat floor interrupted by central peaks.',
+    date: 'April 6, 2026',
+    photographer: 'Artemis II Crew',
+    nasaId: 'art002e009288',
+    imageUrl: 'https://images-assets.nasa.gov/image/art002e009288/art002e009288~large.jpg',
+    imageAlt: 'Earthset captured through the Orion spacecraft window',
+    imageLabel: 'Orion Cabin Window',
+    imageLabelPosition: 'bottom-right',
+    layout: 'text-left'
+  },
+  {
+    id: 'capture-8',
+    title: 'Ready for a\nClose Up',
+    description: 'Captured by the Artemis II crew, the heavily cratered terrain of the eastern edge of the South Pole-Aitken basin is seen with the shadowed terminator – the boundary between lunar day and night – at the top of the image. The South Pole-Aitken basin is the largest and oldest basin on the Moon, providing a glimpse into an ancient geologic history built up over billions of years.',
+    date: 'April 6, 2026',
+    photographer: 'Artemis II Crew',
+    nasaId: 'art002e009283',
+    imageUrl: 'https://images-assets.nasa.gov/image/art002e009283/art002e009283~large.jpg',
+    imageAlt: 'Close up of the heavily cratered terrain of the eastern edge of the South Pole-Aitken basin',
+    imageLabel: 'Lunar Surface',
+    imageLabelPosition: 'bottom-left',
+    layout: 'text-right'
+  },
+  {
+    id: 'capture-9',
+    title: 'Artemis II\nin Eclipse',
+    description: 'Captured by the Artemis II crew during their lunar flyby on April 6, 2026, this image shows the Moon fully eclipsing the Sun. From the crew’s perspective, the Moon appears large enough to completely block the Sun, creating nearly 54 minutes of totality and extending the view far beyond what is possible from Earth. We see a glowing halo around the dark lunar disk. The faint glow of the nearside of the Moon is visible in this image, having been illuminated by light reflected off the Earth.',
+    date: 'April 6, 2026',
+    photographer: 'Artemis II Crew',
+    nasaId: 'art002e009301',
+    imageUrl: 'https://images-assets.nasa.gov/image/art002e009301/art002e009301~large.jpg',
+    imageAlt: 'The Moon fully eclipsing the Sun during the Artemis II lunar flyby',
+    imageLabel: 'Solar Eclipse',
+    imageLabelPosition: 'bottom-right',
+    layout: 'text-left'
   }
 ];
