@@ -10,7 +10,6 @@ export interface MissionCapture {
   imageAlt: string;
   imageLabel: string;
   imageLabelPosition?: 'bottom-right' | 'bottom-left';
-  layout: 'text-left' | 'text-right';
 }
 
 export const missionCaptures: MissionCapture[] = [
@@ -24,8 +23,7 @@ export const missionCaptures: MissionCapture[] = [
     imageUrl: 'https://images-assets.nasa.gov/image/art002e000192/art002e000192~large.jpg',
     imageAlt: 'Earth From the Perspective of Artemis II',
     imageLabel: 'Orion Cabin Window',
-    imageLabelPosition: 'bottom-right',
-    layout: 'text-left'
+    imageLabelPosition: 'bottom-right'
   },
   {
     id: 'capture-2',
@@ -37,8 +35,7 @@ export const missionCaptures: MissionCapture[] = [
     imageUrl: 'https://images-assets.nasa.gov/image/art002e004357/art002e004357~large.jpg',
     imageAlt: 'Orion Snaps a Selfie During External Inspection',
     imageLabel: 'Solar Array Camera',
-    imageLabelPosition: 'bottom-right',
-    layout: 'text-right'
+    imageLabelPosition: 'bottom-right'
   },
   {
     id: 'capture-3',
@@ -50,8 +47,7 @@ export const missionCaptures: MissionCapture[] = [
     imageUrl: 'https://images-assets.nasa.gov/image/art002e009006/art002e009006~large.jpg',
     imageAlt: 'The Moon From the Perspective of Artemis II',
     imageLabel: 'Lunar Far Side',
-    imageLabelPosition: 'bottom-right',
-    layout: 'text-left'
+    imageLabelPosition: 'bottom-right'
   },
   {
     id: 'capture-4',
@@ -63,8 +59,7 @@ export const missionCaptures: MissionCapture[] = [
     imageUrl: 'https://images-assets.nasa.gov/image/orion_earth_moon_20221121/orion_earth_moon_20221121~large.jpg',
     imageAlt: 'Earth behind the Moon from Orion',
     imageLabel: 'Solar Array Camera',
-    imageLabelPosition: 'bottom-left',
-    layout: 'text-right'
+    imageLabelPosition: 'bottom-left'
   },
   {
     id: 'capture-5',
@@ -76,8 +71,7 @@ export const missionCaptures: MissionCapture[] = [
     imageUrl: 'https://images-assets.nasa.gov/image/art001e000265/art001e000265~large.jpg',
     imageAlt: 'View of the Lunar Far Side and Orientale Basin',
     imageLabel: 'Lunar Far Side',
-    imageLabelPosition: 'bottom-right',
-    layout: 'text-left'
+    imageLabelPosition: 'bottom-right'
   },
   {
     id: 'capture-6',
@@ -89,8 +83,7 @@ export const missionCaptures: MissionCapture[] = [
     imageUrl: 'https://images-assets.nasa.gov/image/art002e009287/art002e009287~large.jpg',
     imageAlt: 'Earth setting over the Moon\'s curved limb',
     imageLabel: 'Lunar Far Side',
-    imageLabelPosition: 'bottom-left',
-    layout: 'text-right'
+    imageLabelPosition: 'bottom-left'
   },
   {
     id: 'capture-7',
@@ -102,8 +95,7 @@ export const missionCaptures: MissionCapture[] = [
     imageUrl: 'https://images-assets.nasa.gov/image/art002e009288/art002e009288~large.jpg',
     imageAlt: 'Earthset captured through the Orion spacecraft window',
     imageLabel: 'Orion Cabin Window',
-    imageLabelPosition: 'bottom-right',
-    layout: 'text-left'
+    imageLabelPosition: 'bottom-right'
   },
   {
     id: 'capture-8',
@@ -115,8 +107,7 @@ export const missionCaptures: MissionCapture[] = [
     imageUrl: 'https://images-assets.nasa.gov/image/art002e009283/art002e009283~large.jpg',
     imageAlt: 'Close up of the heavily cratered terrain of the eastern edge of the South Pole-Aitken basin',
     imageLabel: 'Lunar Surface',
-    imageLabelPosition: 'bottom-left',
-    layout: 'text-right'
+    imageLabelPosition: 'bottom-left'
   },
   {
     id: 'capture-9',
@@ -128,7 +119,6 @@ export const missionCaptures: MissionCapture[] = [
     imageUrl: 'https://images-assets.nasa.gov/image/art002e009301/art002e009301~large.jpg',
     imageAlt: 'The Moon fully eclipsing the Sun during the Artemis II lunar flyby',
     imageLabel: 'Solar Eclipse',
-    imageLabelPosition: 'bottom-right',
-    layout: 'text-left'
+    imageLabelPosition: 'bottom-right'
   }
 ];

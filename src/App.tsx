@@ -417,9 +417,11 @@ export default function App() {
         </div>
         
         <div className="flex flex-col gap-24 lg:gap-32">
-          {missionCaptures.map((capture) => (
+          {missionCaptures.map((capture, index) => {
+            const isTextLeft = index % 2 === 0;
+            return (
             <div key={capture.id} className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-              {capture.layout === 'text-left' ? (
+              {isTextLeft ? (
                 <>
                   <div className="lg:col-span-5 order-2 lg:order-1">
                     <h2 className="font-display font-black text-[clamp(40px,5vw,72px)] leading-[1.1] text-text-primary uppercase tracking-[0.04em] mb-6 whitespace-pre-line">
@@ -483,7 +485,8 @@ export default function App() {
                 </>
               )}
             </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 
