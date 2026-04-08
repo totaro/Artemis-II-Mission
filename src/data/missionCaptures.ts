@@ -9,7 +9,7 @@ export interface MissionCapture {
   imageUrl: string;
   imageAlt: string;
   imageLabel: string;
-  imageLabelPosition?: 'bottom-right' | 'bottom-left';
+  imageLabelPosition?: 'bottom-right' | 'bottom-left' | 'top-right' | 'top-left';
 }
 
 export const missionCaptures: MissionCapture[] = [
@@ -59,7 +59,7 @@ export const missionCaptures: MissionCapture[] = [
     imageUrl: 'https://images-assets.nasa.gov/image/orion_earth_moon_20221121/orion_earth_moon_20221121~large.jpg',
     imageAlt: 'Earth behind the Moon from Orion',
     imageLabel: 'Solar Array Camera',
-    imageLabelPosition: 'bottom-left'
+    imageLabelPosition: 'top-left'
   },
   {
     id: 'capture-5',

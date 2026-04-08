@@ -446,7 +446,7 @@ export default function App() {
                         className="w-full h-auto object-cover rounded-sm"
                         referrerPolicy="no-referrer"
                       />
-                      <div className={`absolute bottom-4 ${capture.imageLabelPosition === 'bottom-left' ? 'left-4' : 'right-4'} bg-black/80 backdrop-blur-md border border-white/10 px-3 py-1.5 font-mono text-[10px] text-white tracking-widest uppercase`}>
+                      <div className={`absolute ${capture.imageLabelPosition === 'top-left' ? 'top-4 left-4' : capture.imageLabelPosition === 'top-right' ? 'top-4 right-4' : capture.imageLabelPosition === 'bottom-left' ? 'bottom-4 left-4' : 'bottom-4 right-4'} bg-black/80 backdrop-blur-md border border-white/10 px-3 py-1.5 font-mono text-[10px] text-white tracking-widest uppercase`}>
                         {capture.imageLabel}
                       </div>
                     </div>
@@ -463,7 +463,7 @@ export default function App() {
                         className="w-full h-auto object-cover rounded-sm"
                         referrerPolicy="no-referrer"
                       />
-                      <div className={`absolute bottom-4 ${capture.imageLabelPosition === 'bottom-left' ? 'left-4' : 'right-4'} bg-black/80 backdrop-blur-md border border-white/10 px-3 py-1.5 font-mono text-[10px] text-white tracking-widest uppercase`}>
+                      <div className={`absolute ${capture.imageLabelPosition === 'top-left' ? 'top-4 left-4' : capture.imageLabelPosition === 'top-right' ? 'top-4 right-4' : capture.imageLabelPosition === 'bottom-left' ? 'bottom-4 left-4' : 'bottom-4 right-4'} bg-black/80 backdrop-blur-md border border-white/10 px-3 py-1.5 font-mono text-[10px] text-white tracking-widest uppercase`}>
                         {capture.imageLabel}
                       </div>
                     </div>
