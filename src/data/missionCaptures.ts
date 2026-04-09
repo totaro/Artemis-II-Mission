@@ -62,6 +62,18 @@ export const missionCaptures: MissionCapture[] = [
     imageLabelPosition: 'top-left'
   },
   {
+    id: 'capture-10',
+    title: 'Orion POV:\nDestination and Home',
+    description: 'NASA’s Orion spacecraft captures the Moon and the Earth in one frame during the Artemis II crew’s deep space journey at 6:42 p.m. ET on the sixth day of the mission. The right side of NASA’s Orion spacecraft is seen lit up by the Sun. A waxing crescent Moon is visible behind it. And then, a crescent Earth, tiny compared to the Moon, is about to set below the Moon’s horizon on the right.',
+    date: 'April 6, 2026',
+    photographer: 'NASA',
+    nasaId: 'art002e009567',
+    imageUrl: 'https://images-assets.nasa.gov/image/art002e009567/art002e009567~large.jpg',
+    imageAlt: 'Orion spacecraft captures the Moon and the Earth in one frame',
+    imageLabel: 'Orion Camera',
+    imageLabelPosition: 'bottom-left'
+  },
+  {
     id: 'capture-5',
     title: 'Orientale\nBasin',
     description: 'This striking high-resolution image was captured on April 6, 2026, as Orion swung around the Moon, reaching its closest approach at 7:00 p.m. EDT. During this maneuver, the spacecraft reached a record-breaking distance of approximately 406,771 km (252,756 miles) from Earth. It reveals the Orientale Basin (the dark patch on the left), a massive impact crater that straddles the boundary between the near and far sides, alongside ancient lava flows. In this view, the near side is visible on the right, while the rugged terrain of the lunar far side dominates the left.',
@@ -122,18 +134,6 @@ export const missionCaptures: MissionCapture[] = [
     imageLabelPosition: 'bottom-right'
   },
   {
-    id: 'capture-10',
-    title: 'Orion POV:\nDestination and Home',
-    description: 'NASA’s Orion spacecraft captures the Moon and the Earth in one frame during the Artemis II crew’s deep space journey at 6:42 p.m. ET on the sixth day of the mission. The right side of NASA’s Orion spacecraft is seen lit up by the Sun. A waxing crescent Moon is visible behind it. And then, a crescent Earth, tiny compared to the Moon, is about to set below the Moon’s horizon on the right.',
-    date: 'April 6, 2026',
-    photographer: 'NASA',
-    nasaId: 'art002e009567',
-    imageUrl: 'https://images-assets.nasa.gov/image/art002e009567/art002e009567~large.jpg',
-    imageAlt: 'Orion spacecraft captures the Moon and the Earth in one frame',
-    imageLabel: 'Orion Camera',
-    imageLabelPosition: 'bottom-left'
-  },
-  {
     id: 'capture-11',
     title: 'The Edge of\nTwo Worlds',
     description: 'Our planet draws closer to passing behind the Moon in this image captured by the Artemis II crew during their lunar flyby, about six minutes before Earthset. Earth is in a crescent phase, with sunlight coming from the right. The dark portion of Earth is experiencing nighttime. On Earth’s day side, swirling clouds are visible over muted blue in the Australia and Oceania region. The lines of small indentations on the Moon’s rugged surface are secondary crater chains. These structures are formed by material ejected during a violent primary impact.',
@@ -143,6 +143,6 @@ export const missionCaptures: MissionCapture[] = [
     imageUrl: 'https://images-assets.nasa.gov/image/art002e009285/art002e009285~large.jpg',
     imageAlt: 'Earth drawing closer to passing behind the Moon',
     imageLabel: 'Lunar Flyby',
-    imageLabelPosition: 'bottom-right'
+    imageLabelPosition: 'bottom-left'
   }
 ];
