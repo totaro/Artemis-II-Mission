@@ -523,7 +523,7 @@ export default function App() {
               <h3 className={`font-display font-extrabold text-2xl leading-[1.2] ${missionStatus === 'active' ? 'text-atmosphere' : 'text-text-primary'} uppercase mb-2`}>Artemis II</h3>
               <p className="max-w-[680px] mb-4">
                 {missionStatus === 'active' ? 'Four astronauts are currently venturing around the Moon in a hybrid free-return trajectory. The first crewed mission beyond low-Earth orbit in over 50 years, actively testing vital life support systems and setting a new human distance record of 406,773 km from Earth.' :
-                 missionStatus === 'completed' ? 'Four astronauts successfully ventured around the Moon in a hybrid free-return trajectory. The first crewed mission beyond low-Earth orbit in over 50 years, completely validating vital life support systems and setting a new human distance record of 406,773 km from Earth.' :
+                 missionStatus === 'completed' ? 'Four astronauts successfully ventured around the Moon in a hybrid free-return trajectory. Launching at exactly 6:35 p.m. EDT on April 1, and splashing down at 8:07 p.m. EDT on April 10, the first crewed mission beyond low-Earth orbit in over 50 years completely validated vital life support systems and set a new human distance record of 406,773 km from Earth.' :
                  'Four astronauts will venture around the Moon in a hybrid free-return trajectory. The first crewed mission beyond low-Earth orbit in over 50 years, testing vital life support systems and aiming to set a new human distance record of 406,773 km from Earth.'}
               </p>
             </div>

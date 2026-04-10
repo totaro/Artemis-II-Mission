@@ -144,5 +144,17 @@ export const missionCaptures: MissionCapture[] = [
     imageAlt: 'Earth drawing closer to passing behind the Moon',
     imageLabel: 'Lunar Flyby',
     imageLabelPosition: 'bottom-left'
+  },
+  {
+    id: 'four-thumbs-up',
+    title: 'Four Thumbs Up',
+    description: "The Artemis II crew – (from left) Mission Specialist Christina Koch, Commander Reid Wiseman, Pilot Victor Glover, and Mission Specialist Jeremy Hansen – pause for a group photo inside the Orion spacecraft on their way home. Following a swing around the far side of the Moon on April 6, 2026, the crew exited the lunar sphere of influence on April 7, and are headed back to Earth for a splashdown in the Pacific Ocean on April 10.",
+    date: 'April 7, 2026',
+    photographer: 'NASA',
+    nasaId: 'art002e013356',
+    imageUrl: 'https://images-assets.nasa.gov/image/art002e013356/art002e013356~large.jpg',
+    imageAlt: 'Artemis II crew giving thumbs up inside the Orion spacecraft',
+    imageLabel: 'Orion Spacecraft',
+    imageLabelPosition: 'bottom-right'
   }
 ];
