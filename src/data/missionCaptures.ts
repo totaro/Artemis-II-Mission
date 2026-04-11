@@ -156,5 +156,41 @@ export const missionCaptures: MissionCapture[] = [
     imageAlt: 'Artemis II crew giving thumbs up inside the Orion spacecraft',
     imageLabel: 'Orion Spacecraft',
     imageLabelPosition: 'bottom-right'
+  },
+  {
+    id: 'splashdown-1',
+    title: 'Artemis II\nSplashdown',
+    description: 'NASA\'s Orion spacecraft carrying Artemis II Commander Reid Wiseman, Pilot Victor Glover, and Mission Specialist Christina Koch from NASA, along with Mission Specialist Jeremy Hansen from the CSA (Canadian Space Agency), splashes down in the Pacific Ocean near San Diego, California, at 5:07 p.m. PDT, (8:07 p.m. EDT) on Friday, April 10, 2026.',
+    date: 'April 10, 2026',
+    photographer: 'NASA / Josh Valcarcel',
+    nasaId: 'DSC_3427',
+    imageUrl: 'https://images-assets.nasa.gov/image/DSC_3427/DSC_3427~large.jpg',
+    imageAlt: 'The Orion spacecraft disappears into a spray of sea water in the middle of the blue ocean. Three orange and white striped parachutes are still inflated and connected to Orion by white lines.',
+    imageLabel: 'Pacific Ocean',
+    imageLabelPosition: 'bottom-right'
+  },
+  {
+    id: 'recovery-1',
+    title: 'Artemis II\nRecovery',
+    description: 'NASA astronaut Reid Wiseman, Artemis II commander, left, and CSA (Canadian Space Agency) astronaut Jeremy Hansen, Artemis II mission specialist, talk with NASA Flight Surgeon Richard Scheuring at their Navy MH-60 Seahawk from Helicopter Sea Combat Squadron (HSC) 23 on the flight deck of USS John P. Murtha after they and fellow crewmates NASA Astronauts Victor Glover, and Christina Koch were extracted from their Orion spacecraft after splashdown, Friday, April 10, 2026, in the Pacific Ocean off the coast of California.',
+    date: 'April 10, 2026',
+    photographer: 'NASA / Bill Ingalls',
+    nasaId: '55200096939_71021a8429_o',
+    imageUrl: 'https://images-assets.nasa.gov/image/55200096939_71021a8429_o/55200096939_71021a8429_o~large.jpg',
+    imageAlt: 'Astronauts Reid Wiseman and Jeremy Hansen talk with a flight surgeon on the flight deck of USS John P. Murtha',
+    imageLabel: 'USS John P. Murtha',
+    imageLabelPosition: 'bottom-left'
+  },
+  {
+    id: 'recovery-2',
+    title: 'Artemis II\nCrew Recovery',
+    description: 'NASA astronaut Victor Glover, Artemis II pilot, left, and NASA astronaut Christina Koch, Artemis II mission specialist are seen sitting on a Navy MH-60 Seahawk from Helicopter Sea Combat Squadron (HSC) 23 on the flight deck of USS John P. Murtha after they and fellow crewmates CSA (Canadian Space Agency) astronaut Jeremy Hansen, Artemis II mission specialist, and NASA astronaut Reid Wiseman, Artemis II commander, were extracted from their Orion spacecraft after splashdown, Friday, April 10, 2026, in the Pacific Ocean off the coast of California.',
+    date: 'April 10, 2026',
+    photographer: 'NASA / Bill Ingalls',
+    nasaId: '55200099409_ca39242549_o',
+    imageUrl: 'https://images-assets.nasa.gov/image/55200099409_ca39242549_o/55200099409_ca39242549_o~large.jpg',
+    imageAlt: 'Astronauts Victor Glover and Christina Koch sitting on a Navy MH-60 Seahawk on the flight deck of USS John P. Murtha',
+    imageLabel: 'USS John P. Murtha',
+    imageLabelPosition: 'bottom-right'
   }
 ];
