@@ -403,6 +403,23 @@ export default function App() {
                 </div>
               </div>
             </div>
+
+            <div className="flex flex-col gap-1">
+              <div className="flex justify-between items-end">
+                <span className="font-mono text-xs text-flare tracking-widest uppercase">Splashdown</span>
+                <span className="font-mono text-[10px] text-text-muted uppercase">Mission End</span>
+              </div>
+              <div className="bg-surface border border-border p-3 rounded-sm">
+                <div className="flex justify-between font-mono text-xs mb-1">
+                  <span className="text-text-secondary">Total Duration</span>
+                  <span className="text-text-primary">9d 1h 32m 15s</span>
+                </div>
+                <div className="flex justify-between font-mono text-xs">
+                  <span className="text-text-secondary">Total Distance</span>
+                  <span className="text-text-primary">1,117,659 km</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -522,22 +539,28 @@ export default function App() {
               </div>
               <h3 className={`font-display font-extrabold text-2xl leading-[1.2] ${missionStatus === 'active' ? 'text-atmosphere' : 'text-text-primary'} uppercase mb-2`}>Artemis II</h3>
               <p className="max-w-[680px] mb-4">
-                {missionStatus === 'active' ? 'Four astronauts are currently venturing around the Moon in a hybrid free-return trajectory. The first crewed mission beyond low-Earth orbit in over 50 years, actively testing vital life support systems and setting a new human distance record of 406,773 km from Earth.' :
-                 missionStatus === 'completed' ? 'Four astronauts successfully ventured around the Moon in a hybrid free-return trajectory. Launching at exactly 6:35 p.m. EDT on April 1, and splashing down at 8:07 p.m. EDT on April 10, the first crewed mission beyond low-Earth orbit in over 50 years completely validated vital life support systems and set a new human distance record of 406,773 km from Earth.' :
-                 'Four astronauts will venture around the Moon in a hybrid free-return trajectory. The first crewed mission beyond low-Earth orbit in over 50 years, testing vital life support systems and aiming to set a new human distance record of 406,773 km from Earth.'}
+                {missionStatus === 'active' ? 'Four astronauts are currently venturing around the Moon in a hybrid free-return trajectory. The first crewed mission beyond low-Earth orbit in over 50 years, actively testing vital life support systems and setting a new human distance record of 406,773 km from Earth. The crew is expected to travel a total distance of approximately 1,117,659 km (694,481 miles) over the course of 9 days, 1 hour, 32 minutes, and 15 seconds.' :
+                 missionStatus === 'completed' ? 'Four astronauts successfully ventured around the Moon in a hybrid free-return trajectory. Launching at exactly 6:35 p.m. EDT on April 1, and splashing down at 8:07 p.m. EDT on April 10, the first crewed mission beyond low-Earth orbit in over 50 years completely validated vital life support systems and set a new human distance record of 406,773 km from Earth. Over the course of 9 days, 1 hour, 32 minutes, and 15 seconds, the crew traveled a total distance of approximately 1,117,659 km (694,481 miles).' :
+                 'Four astronauts will venture around the Moon in a hybrid free-return trajectory. The first crewed mission beyond low-Earth orbit in over 50 years, testing vital life support systems and aiming to set a new human distance record of 406,773 km from Earth. The crew will travel a total distance of approximately 1,117,659 km (694,481 miles) over the course of 9 days, 1 hour, 32 minutes, and 15 seconds.'}
               </p>
             </div>
             
             <div className="relative mb-12 before:content-[''] before:absolute before:top-2 before:-left-[35px] before:w-[7px] before:h-[7px] before:bg-space before:border before:border-atmosphere before:rounded-full before:transition-all hover:before:bg-atmosphere hover:before:shadow-[0_0_10px_var(--color-atmosphere)] group">
               <div className="font-mono font-medium text-[12px] leading-none text-flare tracking-[0.25em] mb-2">TARGET // 2027</div>
               <h3 className="font-display font-extrabold text-2xl leading-[1.2] text-text-primary uppercase mb-2">Artemis III</h3>
-              <p className="max-w-[680px] mb-4">Humanity's return to the lunar surface. Two astronauts will descend in the SpaceX Starship HLS to the lunar South Pole to collect samples and probe the polar region.</p>
+              <p className="max-w-[680px] mb-4">NASA's Artemis III mission will launch crew in the Orion spacecraft atop the SLS rocket to low Earth orbit. There, it will test integrated operations, rendezvous, and docking capabilities between Orion and one or both commercial landers from SpaceX and Blue Origin—critical steps needed to land astronauts on the Moon.</p>
             </div>
             
             <div className="relative mb-12 before:content-[''] before:absolute before:top-2 before:-left-[35px] before:w-[7px] before:h-[7px] before:bg-space before:border before:border-atmosphere before:rounded-full before:transition-all hover:before:bg-atmosphere hover:before:shadow-[0_0_10px_var(--color-atmosphere)] group">
               <div className="font-mono font-medium text-[12px] leading-none text-flare tracking-[0.25em] mb-2">TARGET // 2028</div>
               <h3 className="font-display font-extrabold text-2xl leading-[1.2] text-text-primary uppercase mb-2">Artemis IV</h3>
-              <p className="max-w-[680px] mb-4">Launch and integration of the International Habitat module. Crew transfer from Orion to HLS via the Lunar Gateway space station.</p>
+              <p className="max-w-[680px] mb-4">Humanity's return to the lunar surface. Artemis IV will be one of the most complex undertakings of engineering and human ingenuity in the history of deep space exploration. Astronauts will travel to lunar orbit, where two crew members will descend to the surface and spend approximately a week near the South Pole of the Moon conducting new science. The astronauts’ observations, samples, and data collected will expand our understanding of our solar system and home planet, while inspiring the Artemis Generation, before returning to lunar orbit to join their crew for the journey back to Earth.</p>
+            </div>
+
+            <div className="relative mb-12 before:content-[''] before:absolute before:top-2 before:-left-[35px] before:w-[7px] before:h-[7px] before:bg-space before:border before:border-atmosphere before:rounded-full before:transition-all hover:before:bg-atmosphere hover:before:shadow-[0_0_10px_var(--color-atmosphere)] group">
+              <div className="font-mono font-medium text-[12px] leading-none text-flare tracking-[0.25em] mb-2">TARGET // LATE 2028</div>
+              <h3 className="font-display font-extrabold text-2xl leading-[1.2] text-text-primary uppercase mb-2">Artemis V</h3>
+              <p className="max-w-[680px] mb-4">Artemis V is planned to be the fourth crewed mission and second lunar landing of the NASA-led Artemis program. The mission is expected to see the first efforts by NASA to begin building a permanent Moon base.</p>
             </div>
           </div>
         </div>
