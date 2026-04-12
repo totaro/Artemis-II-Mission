@@ -192,5 +192,29 @@ export const missionCaptures: MissionCapture[] = [
     imageAlt: 'Astronauts Victor Glover and Christina Koch sitting on a Navy MH-60 Seahawk on the flight deck of USS John P. Murtha',
     imageLabel: 'USS John P. Murtha',
     imageLabelPosition: 'bottom-right'
+  },
+  {
+    id: 'splashdown-2',
+    title: 'Orion\nAfter Landing',
+    description: 'The Orion spacecraft is seen just after splashing down in the Pacific Ocean. The large red balloons visible on the capsule are the Crew Module Uprighting System (CMUS). These five helium-filled bags deploy automatically upon landing to ensure the capsule rights itself and remains in the correct upright position in the water, keeping the crew safe and communication antennas pointing skyward.',
+    date: 'April 10, 2026',
+    photographer: 'NASA',
+    nasaId: 'jsc2026e022266',
+    imageUrl: 'https://images-assets.nasa.gov/image/jsc2026e022266/jsc2026e022266~large.jpg',
+    imageAlt: 'Orion spacecraft floating in the Pacific Ocean with red helium-filled uprighting balloons deployed',
+    imageLabel: 'Pacific Ocean',
+    imageLabelPosition: 'bottom-left'
+  },
+  {
+    id: 'return-houston',
+    title: 'Return to\nHouston',
+    description: 'The Artemis II crew returns to Ellington Field in Houston, Texas, following their historic 10-day mission around the Moon and successful splashdown and recovery in the Pacific Ocean.',
+    date: 'April 11, 2026',
+    photographer: 'NASA',
+    nasaId: 'NHQ20260411_admin_0009',
+    imageUrl: 'https://images-assets.nasa.gov/image/NHQ20260411_admin_0009/NHQ20260411_admin_0009~large.jpg',
+    imageAlt: 'Artemis II crew returning to Houston',
+    imageLabel: 'Houston, Texas',
+    imageLabelPosition: 'bottom-right'
   }
 ];
