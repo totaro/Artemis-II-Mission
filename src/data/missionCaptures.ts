@@ -206,6 +206,18 @@ export const missionCaptures: MissionCapture[] = [
     imageLabelPosition: 'bottom-left'
   },
   {
+    id: 'recovery-3',
+    title: 'Artemis II\nRecovery',
+    description: 'NASA astronauts Reid Wiseman, commander; left, Christina Koch, mission specialist; CSA (Canadian Space Agency) astronaut Jeremy Hansen, mission specialist; and NASA astronaut Victor Glover, Artemis II pilot, right, pose for a group photo after viewing the Orion spacecraft in the well deck of USS John P. Murtha, Saturday, April 11, 2026, in the Pacific Ocean off the coast of California. The quartet splashed down Friday, April 10 at 5:07 p.m. PDT (8:07p.m. EDT).',
+    date: 'April 11, 2026',
+    photographer: 'NASA / Bill Ingalls',
+    nasaId: 'NHQ202604110022',
+    imageUrl: 'https://live.staticflickr.com/65535/55199636042_bf17a355b3_b.jpg',
+    imageAlt: 'Artemis II crew poses for a group photo in front of the Orion spacecraft in the well deck of USS John P. Murtha',
+    imageLabel: 'USS John P. Murtha',
+    imageLabelPosition: 'bottom-right'
+  },
+  {
     id: 'return-houston',
     title: 'Return to\nHouston',
     description: 'The Artemis II crew returns to Ellington Field in Houston, Texas, following their historic 10-day mission around the Moon and successful splashdown and recovery in the Pacific Ocean.',
@@ -215,6 +227,6 @@ export const missionCaptures: MissionCapture[] = [
     imageUrl: 'https://images-assets.nasa.gov/image/NHQ20260411_admin_0009/NHQ20260411_admin_0009~large.jpg',
     imageAlt: 'Artemis II crew returning to Houston',
     imageLabel: 'Houston, Texas',
-    imageLabelPosition: 'bottom-right'
+    imageLabelPosition: 'bottom-left'
   }
 ];

@@ -4,6 +4,7 @@ import { Menu, X } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { ARTEMIS_II_LAUNCH_DATE, ARTEMIS_II_SPLASHDOWN_DATE } from './constants';
 import { missionCaptures } from './data/missionCaptures';
+import MissionRecapEmbed from './components/MissionRecapEmbed';
 
 const comparisonData = [
   {
@@ -504,6 +505,17 @@ export default function App() {
             </div>
             );
           })}
+        </div>
+
+        {/* Mission Recap */}
+        <div className="mt-20 lg:mt-24">
+          <div className="mb-12">
+            <p className="font-mono font-medium text-[11px] leading-none text-flare tracking-[0.25em] uppercase mb-6">// MISSION RECAP</p>
+            <p className="text-lg text-text-secondary max-w-2xl">
+              Watch the official NASA recap of the historic 10-day Artemis II journey around the Moon.
+            </p>
+          </div>
+          <MissionRecapEmbed />
         </div>
       </section>
 
